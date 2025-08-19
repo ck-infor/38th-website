@@ -243,7 +243,7 @@ h1{
 .logo .logo-container img{
     width: 25%;
     height: auto;
-    object-fit: cover;
+    /* object-fit: cover; */
     aspect-ratio: 1/1; 
 }
 
@@ -297,7 +297,7 @@ h1{
   background-color: rgb(99, 98, 98);
   overflow: hidden;
   border-radius: 5px;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px 10px rgba(0, 0, 0, 0.2), 0 6px 20px 10px rgba(0, 0, 0, 0.19);
   /* height: 100%; */
   color: rgba(255, 255, 255, 0.8);
   margin-bottom: 30px;
@@ -412,6 +412,7 @@ h1{
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
     margin-bottom: 50px;
+    box-shadow: 0 4px 8px 10px rgba(0, 0, 0, 0.2), 0 6px 20px 10px rgba(0, 0, 0, 0.19);
 }
 
 .events .date{
@@ -457,6 +458,11 @@ h1{
     flex-wrap: wrap;
     margin-bottom: 300px;
 }
+
+/* .members h2{
+    left: 50%;
+    transform: translateX(-50%);
+} */
 
 .members .members-container{
     width: 80%;
@@ -807,6 +813,58 @@ h1{
 
 }
 
+
+
+/* course */
+.main-class{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.main-class .class-container{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.main-class .starter{
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.8;
+    font-weight: 600;
+    font-size: 28px;
+    text-align: start;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.main-class .main-class-intro{
+    background-color: rgba(255, 255, 255, 0.05);
+    width: 100%;
+    border-radius: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.main-class .main-class-intro h3{
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.8;
+    font-weight: 600;
+    font-size: 42px;
+    width: 100%;
+    text-align: center;
+}
+
+.main-class .main-class-intro p{
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.8;
+    font-weight: 600;
+    font-size: 28px;
+    margin-bottom: 50px;
+}
 
 /* footer */
 .footer{
