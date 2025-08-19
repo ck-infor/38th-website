@@ -822,11 +822,18 @@ h1{
     flex-wrap: wrap;
 }
 
-.main-class .class-container{
+.side-class{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.class-container{
     width: 80%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin-bottom: 125px;
 }
 
 .main-class .starter{
@@ -836,10 +843,10 @@ h1{
     font-size: 28px;
     text-align: start;
     width: 100%;
-    margin-bottom: 25px;
+    margin-bottom: 50px;
 }
 
-.main-class .main-class-intro{
+.main-class-intro{
     background-color: rgba(255, 255, 255, 0.05);
     width: 100%;
     border-radius: 10px;
@@ -847,9 +854,10 @@ h1{
     padding-bottom: 15px;
     padding-left: 30px;
     padding-right: 30px;
+    margin-bottom: 50px;
 }
 
-.main-class .main-class-intro h3{
+.main-class-intro h3{
     color: rgba(255, 255, 255, 0.8);
     line-height: 1.8;
     font-weight: 600;
@@ -858,12 +866,79 @@ h1{
     text-align: center;
 }
 
-.main-class .main-class-intro p{
+.main-class-intro p{
     color: rgba(255, 255, 255, 0.8);
     line-height: 1.8;
     font-weight: 600;
     font-size: 28px;
     margin-bottom: 50px;
+}
+
+.swiper-top {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    position: relative;
+    width: 100%;
+}
+
+.swiper {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    height: auto;
+    margin: 0;
+}
+
+.swiper .swiper-wrapper{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.swiper-slide{
+    display: flex;
+    justify-content: center;
+}
+
+.swiper-slide .course {
+    width: 50%;
+    height: auto;
+    background-color: #d4d4d4;
+    border-radius: 10px;
+    aspect-ratio: 3/2; 
+    box-shadow: 0 4px 8px 10px rgba(0, 0, 0, 0.2), 0 6px 20px 10px rgba(0, 0, 0, 0.19);
+}
+
+.swiper-button-next,.swiper-button-prev{
+    color: #aaa;
+}
+
+.swiper-slide-shadow{
+    display: none;
+}
+
+@media (max-width: 1436px){
+    .swiper-slide .course {
+        width: 60%;
+    }
+}
+
+@media (max-width: 963px){
+    .swiper-slide .course {
+        width: 70%;
+    }
+}
+
+@media (max-width: 849px){
+    .swiper-slide .course {
+        width: 80%;
+    }
+}
+
+@media (max-width: 669px){
+    .swiper-slide .course {
+        width: 90%;
+    }
 }
 
 /* footer */
