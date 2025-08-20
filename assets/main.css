@@ -29,6 +29,7 @@ h2{
     justify-content: center;
     text-align: center;
     margin-bottom: 30px;
+    background-color: rgba(30,30,30,0.05);
 }
 
 .header img{
@@ -877,7 +878,9 @@ h1{
 .swiper-top {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     margin-top: 50px;
+    margin-bottom: 100px;
     position: relative;
     width: 100%;
 }
@@ -901,13 +904,59 @@ h1{
 }
 
 .swiper-slide .course {
+    display: flex;
+    justify-content: center;
     width: 50%;
     height: auto;
     background-color: #d4d4d4;
     border-radius: 10px;
     aspect-ratio: 3/2; 
     box-shadow: 0 4px 8px 10px rgba(0, 0, 0, 0.2), 0 6px 20px 10px rgba(0, 0, 0, 0.19);
+    padding: 30px;
 }
+
+.swiper-slide .course .logo{
+    width: 40%;
+    margin-bottom: 0;
+}
+
+.swiper-slide .course i{
+    height: 120px;
+    font-size: 80px;
+    position: relative;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%,-50%);
+}
+
+.swiper-slide .course .text{
+    height: auto;
+    /* position: relative;
+    top: 50%;
+    transform: translateY(-30%); */
+    align-items: center;
+}
+
+.swiper-slide .course .more{
+    margin-top: 10px;
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    height: 20%;
+}
+
+.swiper-slide .course .day{
+    text-align: center;
+    font-size: 32px;
+}
+
+.swiper-slide .course .name{
+    text-align: center;
+    font-size: 24px;
+}
+/* .swiper-slide .course .logo{
+    width: 40px;
+}  */
 
 .swiper-button-next,.swiper-button-prev{
     color: #aaa;
@@ -939,6 +988,10 @@ h1{
     .swiper-slide .course {
         width: 90%;
     }
+}
+
+.side-class .class-container .intro{
+    margin-top: 50px;
 }
 
 /* footer */
