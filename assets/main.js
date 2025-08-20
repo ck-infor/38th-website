@@ -37,4 +37,10 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
+swiper.on("slideChange", function () {
+  document.querySelectorAll(".collapse.show").forEach(el => {
+    bootstrap.Collapse.getInstance(el)?.hide();
+  });
+});
+
 
