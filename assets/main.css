@@ -244,6 +244,7 @@ h1{
 
 .title .photo-container{
     max-width: 800px;
+    max-height: 600px;
     overflow: hidden;
     margin: 0;
     border-radius: 10px;
@@ -256,7 +257,7 @@ h1{
 
 .title img{
     max-width: 100%;
-    height: auto;
+    height: 50%;
 }
 
 @media (max-width: 1430px){
@@ -276,6 +277,9 @@ h1{
 }
 
 @media (max-width: 576px) {
+    .title{
+        margin-top: 20px;
+    }
 
     .photo-container, #photo {
         max-width: 400px;
@@ -293,13 +297,15 @@ h1{
 }
 
 
-@media (max-width: 400px) {
+@media (max-width: 475px) {
     .photo-container, #photo {
         max-width: 275px;
     }
 
     h1{
         margin-right: 0;
+        margin-bottom: 0;
+        font-size: 48px;
     }
 
     .title{
@@ -429,19 +435,26 @@ h1{
 
 @media (max-width: 576px){
     .intro .photo-container{
-        max-width: 400px;
+        max-width: 375px;
     }
 
     .intro .intro-text{
-        font-size: 22px;
+        font-size: 18px;
     }
 
     .intro ul{
-        font-size: 22px;
+        font-size: 18px;
     }
 
     h2{
-        font-size: 46px;
+        font-size: 42px;
+    }
+}
+
+@media (max-width: 475px){
+
+    .intro .photo-container{
+        max-width: 250px;
     }
 }
 
@@ -500,7 +513,7 @@ h1{
 
 @media (max-width: 576px){
     .logo .logo-intro{
-        font-size: 22px;
+        font-size: 18px;
     }
 }
 
@@ -628,6 +641,16 @@ h1{
 .teams .team-member:hover .social {
   opacity: 1;
   bottom: 15px;
+}
+
+@media(max-width: 576px) {
+    .teams{
+        margin-bottom: 100px;
+    }
+
+    /* .teams .team-member .member-info h4{
+        font-size: 26px;
+    } */
 }
 
 .events{
@@ -792,7 +815,7 @@ h1{
     }
 
     .teams .teams-intro{
-        font-size: 22px;
+        font-size: 18px;
     }
 
     .second-title{
@@ -800,13 +823,17 @@ h1{
     }
 
     .events h3{
-        font-size: 40px;
+        font-size: 32px;
+    }
+
+    .events .title-container hr{
+        margin-bottom: 14px;
     }
 
     .events .events-detail{
         margin-bottom: 50px;
-        padding-top: 15px;
-        padding-bottom: 15px;
+        padding-top: 20px;
+        padding-bottom: 20px;
         padding-left: 25px;
         padding-right: 25px;
     }
@@ -816,16 +843,18 @@ h1{
     }
 
     .events .events-intro{
-        font-size: 22px;
+        font-size: 18px;
         margin-bottom: 10px;
     }
 
     .events .finish{
-        font-size: 22px;
+        font-size: 18px;
+        width: 150px;
+        margin-bottom: 20px;
     }
 
     .events .events-start{
-        font-size: 22px;
+        font-size: 18px;
     }
 }
 
@@ -1150,7 +1179,7 @@ h1{
     }
 
     .qa .answer .text{
-        font-size: 22px;
+        font-size: 18px;
         padding: 20px;
         width: 70%;
         line-height: 1.8;
@@ -1231,20 +1260,25 @@ h1{
 }
 
 @media(max-width: 576px){
+    .history .history-container{
+        width: 80%;
+    }
+
     .history .history-container .starter{
-        font-size: 22px;
+        font-size: 18px;
     }
 
     .history .history-container h3{
-        font-size: 36px;
+        text-align: center;
+        font-size: 32px;
     }
 
     .history .history-container ul li{
-        font-size: 22px;
+        font-size: 18px;
     }
 
     .history .history-container ul li .ps{
-        font-size: 20px;
+        font-size: 14px;
     }
 }
 
@@ -1513,31 +1547,45 @@ h1{
     }
 
     .side-class .main-class-intro img{
-        width: 80%;
+        width: 100%;
     }
 }
 
 @media (max-width: 576px){
+    .main-class-intro{
+        padding-top: 7.5px;
+        padding-bottom: 7.5px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .swiper-top{
+        margin-bottom: 20px;
+    }
+
+    .swiper-slide .course {
+        padding: 15px;
+    }
     .swiper-slide .course i{
-        font-size: 60px;
+        font-size: 56px;
     }
 
     .side-class .course .day{
-        font-size: 24px;
+        font-size: 18px;
     }
 
     .side-class .course .name{
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .swiper-slide .course .more{
         width: 100px;
-        height: 75px;
+        height: 50px;
     }
 
     .swiper-slide .course .text hr{
-        margin-top: 7.5px;
-        margin-bottom: 7.5px;
+        margin-top: 5px;
+        margin-bottom: 5px;
     }
 
     .class-container{
@@ -1545,19 +1593,47 @@ h1{
     }
 
     .main-class .starter{
-        font-size: 22px;
+        font-size: 18px;
     }
 
     .main-class-intro p{
-        font-size: 22px;
+        font-size: 18px;
     }
 
     .main-class-intro h3{
-        font-size: 38px;
+        font-size: 32px;
     }
 
     .side-class{
         margin-bottom: 300px;
+    }
+
+    .side-class .intro .card{
+        font-size: 20px;
+    }
+
+    .side-class .card ul li{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 400px){
+    .side-class .course i{
+        font-size: 48px;
+    }
+
+    .side-class .course .day{
+        font-size: 20px;
+    }
+
+    .side-class .course .name{
+        font-size: 16px;
+    }
+
+    .swiper-slide .course .more{
+        width: 75px;
+        height: 37.5px;
+        font-size: 14px;
     }
 }
 
