@@ -406,7 +406,7 @@ h1{
 }
 
 .intro ul{
-    list-style-image:url('img/check.png');
+    list-style-image:url('img/blue.png');
     margin-top: 10px;
     margin-bottom: 10px;
     color: rgba(255, 255, 255, 0.87);
@@ -1078,7 +1078,31 @@ h1{
     }
 }
 
+@media (max-width: 450px){
+    #outer-an:hover #an {
+        height: 250px;
+    }
 
+    #outer-raylu:hover #raylu {
+        height: 250px;
+    }
+
+    #outer-yyc:hover #yyc {
+        height: 250px;
+    }
+
+    #outer-rayli:hover #rayli {
+        height: 250px;
+    }
+
+    #outer-yc:hover #yc {
+        height: 250px;
+    }
+
+    #outer-chen:hover #chen {
+        height: 275px;
+    }
+}
 
 /* Q&A */
 .qa{
@@ -1173,9 +1197,9 @@ h1{
 
 @media(max-width: 576px){
     .qa .question .text{
-        font-size: 32px;
+        font-size: 28px;
         padding: 20px;
-        width: 60%;
+        width: 70%;
     }
 
     .qa .answer .text{
