@@ -1,14 +1,31 @@
 
 const mobileNavToggleBtn = document.querySelector('.mobile-nav-toggle');
+const body = document.querySelector('body');
+const mobileNav = document.querySelector('.menu ul');
 
-  function mobileNavToogle() {
-    document.querySelector('body').classList.toggle('mobile-nav-active');
+  function mobileNavToggle() {
+    body.classList.toggle('mobile-nav-active');
     mobileNavToggleBtn.classList.toggle('bi-list');
     mobileNavToggleBtn.classList.toggle('bi-x');
   }
+
   if (mobileNavToggleBtn) {
-    mobileNavToggleBtn.addEventListener('click', mobileNavToogle);
+    mobileNavToggleBtn.addEventListener('click', (e) => {
+      e.stopPropagation(); // 防止點擊按鈕時被「外部點擊」判定
+      mobileNavToggle();
+    });
   }
+
+  // 點擊選單以外區域時關閉
+  document.addEventListener('click', (e) => {
+    if (
+      body.classList.contains('mobile-nav-active') && // 只有在開啟狀態才處理
+      !mobileNav.contains(e.target) && // 點擊位置不在選單內
+      !mobileNavToggleBtn.contains(e.target) // 點擊位置不在按鈕上
+    ) {
+      mobileNavToggle();
+    }
+  });
 
   /**
    * Hide mobile nav on same-page/hash links
@@ -20,18 +37,6 @@ const mobileNavToggleBtn = document.querySelector('.mobile-nav-toggle');
       }
     });
 
-  });
-
-  /**
-   * Toggle mobile nav dropdowns
-   */
-  document.querySelectorAll('.menu .toggle-dropdown').forEach(menu => {
-    menu.addEventListener('click', function(e) {
-      e.preventDefault();
-      this.parentNode.classList.toggle('active');
-      this.parentNode.nextElementSibling.classList.toggle('dropdown-active');
-      e.stopImmediatePropagation();
-    });
   });
 
 function aosInit() {

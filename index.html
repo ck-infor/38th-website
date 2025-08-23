@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"">
     <title>infor 38th</title>
 
     <link href="assets/img/建資社徽.png" rel="icon">
@@ -44,14 +44,14 @@
             <div class="photo-container">
                 <div id="photo" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
-                        <div class="carousel-item active" data-bs-interval="5000">
-                            <img src="assets/img/封面照片.JPG" class="d-block mx-auto" alt="yee">
+                        <div class="carousel-item active " data-bs-interval="5000">
+                            <img src="assets/img/封面照片.JPG" class="d-block mx-auto img-fluid" alt="yee">
                         </div>
                         <div class="carousel-item"  data-bs-interval="5000">
-                            <img src="assets/img/團隊照片.jpg" class="d-block mx-auto" alt="yee">
+                            <img data-src="assets/img/團隊照片.jpg" class="d-block mx-auto lazyload img-fluid" alt="yee">
                         </div>
                         <div class="carousel-item"  data-bs-interval="5000">
-                            <img src="assets/img/成發.jpg" class="d-block mx-auto" alt="yee">
+                            <img data-src="assets/img/成發.jpg" class="d-block mx-auto lazyload img-fluid" alt="yee">
                         </div>
                     </div>
 
@@ -103,6 +103,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js"></script>
 
     <script src="assets/main.js"></script>
 </body>
