@@ -1,3 +1,16 @@
+// const scroll = new LocomotiveScroll({
+//     el: document.querySelector('[data-scroll-container]'),
+//     smooth: true,
+//   	repeat: true,
+//     lerp:.02,
+//     tablet:{
+//     smooth:true,
+//       breakpoint:250
+//     },
+//     smartphone:{
+//       smooth:false
+//     }
+// });
 
 const mobileNavToggleBtn = document.querySelector('.mobile-nav-toggle');
 const body = document.querySelector('body');
@@ -14,7 +27,7 @@ const mobileNav = document.querySelector('.menu ul');
       e.stopPropagation(); // 防止點擊按鈕時被「外部點擊」判定
       mobileNavToggle();
     });
-  }
+  };
 
   // 點擊選單以外區域時關閉
   document.addEventListener('click', (e) => {
@@ -33,7 +46,7 @@ const mobileNav = document.querySelector('.menu ul');
   document.querySelectorAll('.menu a').forEach(menu => {
     menu.addEventListener('click', () => {
       if (document.querySelector('.mobile-nav-active')) {
-        mobileNavToogle();
+        mobileNavToggle();
       }
     });
 
@@ -48,6 +61,9 @@ function aosInit() {
     });
   }
   window.addEventListener('load', aosInit);
+  // scroll.on("scroll", () => {
+  //   AOS.refresh();
+  // });
 
 // isotope
 var elem = document.querySelector('.isotope-container');
