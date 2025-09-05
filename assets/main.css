@@ -5,6 +5,17 @@
 body{
     background-color: #121212;
     scroll-behavior: smooth;
+    &::-webkit-scrollbar-thumb {
+        background: rgb(255, 255, 255);
+        border-radius: 5px;
+    }
+    &::-webkit-scrollbar-track {
+        background-color: #121212;
+    }
+    &::-webkit-scrollbar {
+        max-width: 10px;
+        max-height: 15px;
+    }
     font-family: "Noto Sans TC", "Roboto", sans-serif;
 }
 
