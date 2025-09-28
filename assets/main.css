@@ -902,7 +902,23 @@ h1{
     text-align: center;
     width: 200px;
     border-radius: 15px;
+    transition: ease-in-out 0.3s;
 }
+
+#register a{
+    color: rgba(255,255,255,0.87);
+}
+
+#register:hover{
+    background-color: rgba(255, 255, 255, 0.87);
+    color: rgb(32, 32, 32);
+    width: 220px;
+    /* line-height: 2; */
+    a{
+        color: rgb(32,32,32);
+    }
+}
+
 
 
 @media(max-width: 992px){
