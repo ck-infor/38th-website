@@ -326,11 +326,11 @@ h1{
     }
 
     .photo-container,.carousel-item, #photo {
-        max-width: 400px;
+        max-width: 300px;
     }
 
     .title img{
-        max-width: 400px;
+        max-width: 300px;
         height: 300px;
     }
 
@@ -443,6 +443,7 @@ h1{
 }
 
 .annoucement .name{
+    margin-left: 2px;
     font-size: 16px;
     color: rgba(255, 255, 255, 0.87);
 }
@@ -462,7 +463,14 @@ h1{
     font-weight: 400;
     line-height: 1.8;
     text-decoration: none;
+    margin-right: 10px;
     transition: all .3s ease-in-out;
+}
+
+.annoucement a{
+    /* color: #121212;
+    background-color: rgba(255, 255, 255, 0.87); */
+    text-decoration: underline;
 }
 
 .second-date{
@@ -481,7 +489,13 @@ h1{
     color: #121212;
 }
 
-@media (max-width: 576px){
+/* @media (max-width: 767px){
+    .annoucement .name{
+        width:36px;
+    }
+} */
+
+@media (max-width: 768px){
     .date{
         display: none;
     }
@@ -643,6 +657,10 @@ h1{
 @media (max-width: 576px){
     .logo .logo-intro{
         font-size: 18px;
+    }
+
+    .logo .logo-container .photo-container{
+        max-width: 250px;
     }
 }
 
@@ -984,6 +1002,8 @@ h1{
     }
 
     .events .date{
+        display: block; /*temporary solution */
+        height: 18px;
         font-size: 18px;
     }
 
@@ -1573,7 +1593,16 @@ h1{
     height: 120px;
     font-size: 80px;
     position: relative;
-    top: 50%;
+    top: 37%;
+    left: 25%;
+    transform: translate(-50%,-50%);
+}
+
+.swiper-slide .course img{
+    height: 90px;
+    font-size: 80px;
+    position: relative;
+    top: 40%;
     left: 25%;
     transform: translate(-50%,-50%);
 }
@@ -1792,6 +1821,16 @@ h1{
     .change{
         font-size: 14px;
     }
+
+    .swiper-slide .course i{
+        top: 50%;
+    }
+
+    .swiper-slide .course img{
+        top: 40%;
+        height: 40%;
+    }
+    
 }
 
 @media (max-width: 400px){
