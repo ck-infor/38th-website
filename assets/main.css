@@ -1005,6 +1005,8 @@ h1{
         display: block; /*temporary solution */
         height: 18px;
         font-size: 18px;
+        display: block;
+        /* 不知所云 */
     }
 
     .events .events-intro{
